@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Add viewport meta tag for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Explore the world of Books</title>
+</head>
+<body>
+    
+<div>
+
+<!-- NAVBAR SECTION -->
+<!-- Add Bootstrap navbar class and container class -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Add navbar header class -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img src="images/my logo 1.png" width="90px" alt="logo">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Mission</a></li>
+        <li><a href="#">Discover</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Login</a></li>
+        <li><button type="button" class="btn btn-primary navbar-btn">Start Free Trial</button></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Add Bootstrap JavaScript files -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+<div style="text-align: center; padding: 20px;">
+  <h3 style="color: black;">Explore the world of Books</h3>
+  <p>With Supreme online collection of books, academic texts, and tools, trusted by students worldwide.</p>
+  <div class="search" id="search-bar">
+    <input type="text" placeholder="Search...">
+    <button class="submit"><i class="fas fa-search"></i></button>
+  </div>
+  <script>
+    var searchBox = document.getElementById("search-bar");
+    var Icon = document.getElementsByClassName("submit")[0];
+    Icon.onclick = function() {
+      searchBox.classList.toggle("");
+    };
+  </script>
+</div>
+
+<style>
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #E1D9D1;
+    color: #fff;
+  }
+
+  /* Navigation Links */
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+
+  /* Navigation Right */
+  .nav-right {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Media Query for Responsive Design */
+  @media only screen and (max-width: 600px) {
+    /* Navigation Links */
+    .navbar a {
+      display: none;
+    }
+
+    /* Toggle Button */
+    .navbar .toggle-btn {
+      display: block;
+      cursor: pointer;
+    }
+  }
+</style>
+<!-- NAVBAR SECTION ENDS -->
+
+
+<!-- IMAGE SLIDER START -->
+
+<div class="container-h2">
+  <h2 style="text-align: center; padding: 20px;">Trending Books</h2>
+</div>
+<!-- First slider -->
+<div class="slider" style="display: flex; justify-content: center;">
+  <button class="arrow prev" style="padding: 20px;">&#10094;</button>
+  <div class="slides" style="display: flex; align-items: center;">
+    <div class="slide" style="padding: 20px;">
+      <img src="images/An American Story.png" alt="Slide 1" style="width: 200px; height: 300px;">
+      <br>
+      <button class="borrow-btn" style="background-color: blue;">Borrow</button>
+    </div>
+    <div class="slide" style="padding: 20px;">
+      <img src="images/Don't tell a soul.png" alt="Slide 2" style="width: 200px; height: 300px;">
+      <br>
+      <button class="borrow-btn" style="background-color: blue;">Borrow</button>
+    </div>
+    <div class="slide" style="padding: 20px;">
+      <img src="images/The Beaten Path.png" alt="Slide 3" style="width: 200px; height: 300px;">
+      <br>
+      <button class="borrow-btn" style="background-color: blue;">Borrow</button>
+    </div>
+    <div class="slide" style="padding: 20px;">
+      <img src="images/shutter island.png" alt="Slide 3" style="width: 200px; height: 300px;">
+      <br>
+      <button class="borrow-btn" style="background-color: blue;">Borrow</button>
+    </div>
+  </div>
+  <button class="arrow next" style="padding: 20px;">&#10095;</button>
+</div>
+
+<!-- Second slider -->
+<div class="container-h2" style="padding: 20px; text-align: center;">
+  <h2>Romance</h2>
+</div>
+
+<div class="slider" style="display: flex; align-items: center; justify-content: center; padding: 30px 0;">
+  <button class="arrow prev" style="margin-right: 20px;">&#10094;</button>
+  <div class="slides" style="display: flex;">
+    <div class="slide" style="margin-right: 20px;">
+      <img src="images/passions of their dreams.png" alt="Slide 1">
+      <br>
+      <button class="borrow-btn" style="background-color: blue;">Borrow</button>
+    </div>
+    <div class="slide" style="margin-right: 20px;">
+      <img src="images/the billionaires.png" alt="Slide 2">
+      <br>
+      <button class="borrow-btn" style="background-color: blue;">Borrow</button>
+    </div>
+    <div class="slide" style="margin-right: 20px;">
+      <img src="images/second chance.png" alt="Slide 3">
+      <br>
+      <button class="borrow-btn" style="background-color: blue;">Borrow</button>
+    </div>
+    <div class="slide" style="margin-right: 20px;">
+      <img src="images/An Honest Woman.png" alt="Slide 3">
+      <br>
+      <button class="borrow-btn" style="background-color: blue;">Borrow</button>
+    </div>
+  </div>
+  <button class="arrow next" style="margin-left: 20px;">&#10095;</button>
+</div>
+
+   <!-- Third slider -->
+<div class="container-h2">
+  <h2>Thillers</h2>
+</div> 
+<div class="slider">
+  <button class="arrow prev">&#10094;</button>
+  <div class="slides">
+    <div class="slide">
+      <img src="images/Troll.png" alt="Slide 1" style="padding: 20px;">
+      <br>
+      <button class="borrow-btn" style="background-color: blue;">Borrow</button>
+    </div>
+    <div class="slide">
+      <img src="images/Let Him In.png" alt="Slide 2" style="padding: 20px;">
+      <br>
+      <button class="borrow-btn" style="background-color: blue;">Borrow</button>
+    </div>
+    <div class="slide">
+      <img src="images/He said she said.png" alt="Slide 3" style="padding: 20px;">
+      <br>
+      <button class="borrow-btn" style="background-color: blue;">Borrow</button>
+    </div>
+    <div class="slide">
+      <img src="images/lies.png" alt="Slide 4" style="padding: 20px;">
+      <br>
+      <button class="borrow-btn" style="background-color: blue;">Borrow</button>
+    </div>
+  </div>
+  <button class="arrow next">&#10095;</button>
+</div>
+<style>
+.slide {
+  display: inline-block;
+  text-align: center;
+}
+</style>
+<br>
+
+
+<style>
+  .container-h2 {
+    text-align: center;
+  }
+
+  .slider {
+    display: flex;
+    justify-content: center;
+  }
+
+  .slide {
+    display: inline-block;
+    margin-right: 20px;
+  }
+</style>
+
+
+
+
+<! Four slider -->
+<div class="container-h2" style="padding: 20px; text-align: center;">
+  <h2>Kids</h2>
+</div>
+
+<div class="slider" style="padding: 20px;">
+  <button class="arrow prev" style="float: left;">&#10094;</button>
+  <div class="slides" style="display: inline-block;">
+    <div class="slide" style="display: inline-block; padding: 10px; text-align: center;">
+      <img src="images/Rectangle 11.png" alt="Slide 1" style="display: block; margin: 0 auto;">
+      <br>
+      <button class="borrow-btn" style="background-color: blue;">Borrow</button>
+    </div>
+    <div class="slide" style="display: inline-block; padding: 10px; text-align: center;">
+      <img src="images/Rectangle 12.png" alt="Slide 2" style="display: block; margin: 0 auto;">
+      <br>
+      <button class="borrow-btn" style="background-color: blue;">Borrow</button>
+    </div>
+    <div class="slide" style="display: inline-block; padding: 10px; text-align: center;">
+      <img src="images/Rectangle 9.png" alt="Slide 3" style="display: block; margin: 0 auto;">
+      <br>
+      <button class="borrow-btn" style="background-color: blue;">Borrow</button>
+    </div>
+    <div class="slide" style="display: inline-block; padding: 10px; text-align: center;">
+      <img src="images/ABC.png" alt="Slide 4" style="display: block; margin: 0 auto;">
+      <br>
+      <button class="borrow-btn" style="background-color: blue;">Borrow</button>
+    </div>
+  </div>
+  <button class="arrow next" style="float: right;">&#10095;</button>
+</div>
+
+
+<!-- TEXT & IMAGES START -->
+<h2 style="text-align: center;">Read your textbooks & find supporting sources</h2>
+<div style="display: flex; justify-content: center; align-items: center; padding: 20px;">
+  <img src="images/physiological.png" alt="Image 1" style="width: 10%; padding: 10px;">
+  <img src="images/Language.png" alt="Image 2" style="width: 10%; padding: 10px;">
+  <img src="images/mathematics.png" alt="Image 3" style="width: 10%; padding: 10px;">
+  <img src="images/Learning science.png" alt="Image 4" style="width: 10%; padding: 10px;">
+</div>
+
+
+<!-- TEXT AND IMAGES END -->
+
+<br>
+<br>
+
+<!-- rectangular box START -->
+
+<div style="width: 100%; height: 100px; background-color: rectangle; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px;">
+  <h1 style="font-size: smaller; margin: 0;">DISCOVER</h1>
+  <h1 style="font-size: smaller; margin: 0;">Go beyond your reading list</h1>
+  <h1 style="font-size: smaller; margin: 0;">with a selection of 950+ themes &amp; subtopics to investigate</h1>
+  <h2 style="align-self: flex-end; margin: 0; color: blue;">
+    <h3 style="margin: 0; color: blue;">View all topics</h3>
+  </h2>
+</div>
+
+
+
+<div style="display:flex; justify-content:center; width:100%; padding:20px;">
+  <div style="border:1px solid black; width:200px; height:70px; margin-right:20px;">
+    <div style="padding:10px;">
+      <h1 style="margin:0; font-size:12px;">Education</h1>
+      <h2 style="font-size:12px; color:#808080;">19,301 Books</h2>
+    </div>
+  </div>
+  
+  <div style="border:1px solid black; width:200px; height:70px; margin-right:20px;">
+    <div style="padding:10px;">
+      <h1 style="margin:0; font-size:12px;">Art</h1>
+      <h2 style="font-size:12px; color:#808080;">200 Books</h2>
+    </div>
+  </div>
+  
+  <div style="border:1px solid black; width:200px; height:70px;">
+    <div style="padding:10px;">
+      <h1 style="margin:0; font-size:12px;">Design</h1>
+      <h2 style="font-size:12px; color:#808080;">800 Books</h2>
+    </div>
+  </div>
+</div>
+
+
+<br>
+
+<div style="display:flex; justify-content:center; width:100%; padding:20px;">
+  <div style="border:1px solid black; width:200px; height:70px; margin-right:20px;">
+    <div style="padding:10px;">
+      <h1 style="margin:0; font-size:12px;">Economics</h1>
+      <h2 style="font-size:12px; color:#808080;">5,301 Books</h2>
+    </div>
+  </div>
+  
+  <div style="border:1px solid black; width:200px; height:70px; margin-right:20px;">
+    <div style="padding:10px;">
+      <h1 style="margin:0; font-size:12px;">Computer</h1>
+      <h2 style="font-size:12px; color:#808080;">650 Books</h2>
+    </div>
+  </div>
+  
+  <div style="border:1px solid black; width:200px; height:70px;">
+    <div style="padding:10px;">
+      <h1 style="margin:0; font-size:12px;">Science</h1>
+      <h2 style="font-size:12px; color:#808080;">1,098 Books</h2>
+    </div>
+  </div>
+</div>
+
+
+<br>
+
+<div style="display: flex; justify-content: space-between; width: 600px; padding: 20px; margin: 0 auto;">
+  <div style="border: 1px solid black; width: 200px; height: 70px; margin-right: 20px; display: flex; justify-content: center; align-items: center;">
+    <div style="padding: 10px;">
+      <h1 style="margin: 0; font-size: 12px;">History</h1>
+      <h2 style="font-size: 12px; color: #808080;">5,301 Books</h2>
+    </div>
+  </div>
+
+  <div style="border: 1px solid black; width: 200px; height: 70px; margin-right: 20px; display: flex; justify-content: center; align-items: center;">
+    <div style="padding: 10px;">
+      <h1 style="margin: 0; font-size: 12px;">Business</h1>
+      <h2 style="font-size: 12px; color: #808080;">9,504 Books</h2>
+    </div>
+  </div>
+
+  <div style="border: 1px solid black; width: 200px; height: 70px; display: flex; justify-content: center; align-items: center;">
+    <div style="padding: 10px;">
+      <h1 style="margin: 0; font-size: 12px;">Architecture</h1>
+      <h2 style="font-size: 12px; color: #808080;">798 Books</h2>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- rectangular box END -->
+
+
+<!-- PRICING TABLE START -->
+
+
+    <style>
+      .pricing-table {
+        display: flex;
+        justify-content: center;
+      }
+
+      .pricing-card {
+        width: 300px;
+        background-color: lightgray;
+        text-align: center;
+        padding: 20px;
+        margin: 20px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .pricing-header {
+        background-color: darkgrey;
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+
+      .pricing-body {
+        padding: 20px;
+      }
+
+      .pricing-footer {
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+
+      .price {
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
+
+      .price-unit {
+        font-size: 20px;
+        color: gray;
+        margin-bottom: 10px;
+      }
+
+      .btn {
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pricing-table">
+      <div class="pricing-card">
+        <div class="price">Monthly</div>
+        <div class="pricing-body">
+          <div class="price">$10 USD</div>
+          <div class="month">Monthly</div>
+          <p>Monthly billing; anytime cancellation</p>
+        </div>
+        <div class="pricing-footer">
+          <a href="#" class="btn">Start free Trial</a>
+        </div>
+      </div>
+      <div class="pricing-table">
+        <div class="pricing-card">
+          <div class="price">Monthly</div>
+          <div class="pricing-body">
+            <div class="price">$8 USD</div>
+            <div class="month">Monthly</div>
+            <p>Monthly billing; anytime cancellation</p>
+          </div>
+          <div class="pricing-footer">
+            <a href="#" class="btn">Start free Trial</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+<!-- PRICING TABLE END -->
+
+
+<!-- BOTTOM HEADING  -->
+
+<h1 style="text-align:center">OUR COMMUNITY</h1>
+<h1 style="text-align:center">What people are saying about us</h1>
+<div style="display:flex;">
+  <div style="flex:1;">
+    <h3 style="text-align:left; font-size:small">It's hard not to recommend Supreme</h3>
+    <h4 style="text-align:left; font-size:small">Angel</h4>
+  </div>
+  <div style="flex:1;">
+    <h3 style="text-align:left; font-size:small">"Superb</h3>
+    <h4 style="text-align:left; font-size:small">Akin Abel</h4>
+  </div>
+
+  <div style="flex:1;">
+    <h3 style="text-align:left; font-size:small">"The Customer service is great"</h3>
+    <h4 style="text-align:left; font-size:small">Akin Abel</h4>
+  </div>
+</div>
+
+<div style="display:flex;">
+  <div style="flex:1;">
+    <h3 style="text-align:left; font-size:small">"I just wanted to say Thank You"</h3>
+    <h4 style="text-align:left; font-size:small">Laura</h4>
+  </div>
+
+
+  <div style="flex:1;">
+    <h3 style="text-align:left; font-size:small">"Best Library in DC"</h3>
+    <h4 style="text-align:left; font-size:small">Laura</h4>
+  </div>
+
+
+  <div style="flex:1;">
+    <h3 style="text-align:left; font-size:small">"Highly recommended for both studying and leisure reading!"</h3>
+    <h4 style="text-align:left; font-size:small">Krolls</h4>
+  </div>
+</div>
+<!-- BOTTOM HEADING  -->
+
+
+
+<!-- FOOTER START -->
+
+
+<footer style="background-color: black; display: flex; justify-content: space-between;">
+  <div style="flex-basis: 30%;">
+    <h1 style="text-transform: uppercase; color: white; font-size: 14px;">SUPREME</h1>
+    <h2 style="color: white; font-size: 14px;">Pricing</h2>
+    <h2 style="color: white; font-size: 14px;">FAQ's</h2>
+    <h2 style="color: white; font-size: 14px;">Contact Us</h2>
+    <h2 style="color: white; font-size: 14px;">Supreme for Instructors</h2>
+    <h2 style="color: white; font-size: 14px;">Careers</h2>
+  </div>
+  <div style="flex-basis: 30%;">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 style="color: white; font-size: 14px;">Topics</h2>
+    <h2 style="color: white; font-size: 14px;">Reading Lists</h2>
+  </div>
+  <div style="flex-basis: 30%;">
+    <h1 style="text-transform: uppercase; color: white; font-size: 14px;">LEARN</h1>
+    <h3 style="color: white; font-size: 14px;">Architecture</h3>
+    <h3 style="color: white; font-size: 14px;">Art</h3>
+    <h3 style="color: white; font-size: 14px;">Biological Sciences</h3>
+    <h3 style="color: white; font-size: 14px;">Business</h3>
+    <h3 style="color: white; font-size: 14px;">Computer Science</h3>
+    <h3 style="color: white; font-size: 14px;">Design</h3>
+  </div>
+
+
+  <div style="flex-basis: 30%;">
+    <br>
+    <br>
+    <br>
+    <!-- <h1 style="text-transform: uppercase; color: white; font-size: 14px;">LEARN</h1> -->
+    <h3 style="color: white; font-size: 14px;">Economics</h3>
+    <h3 style="color: white; font-size: 14px;">Education</h3>
+    <h3 style="color: white; font-size: 14px;">History</h3>
+    <h3 style="color: white; font-size: 14px;">Languages</h3>
+    <h3 style="color: white; font-size: 14px;">Law</h3>
+    <h3 style="color: white; font-size: 14px;">Literature</h3>
+  </div>
+
+
+  <div style="display: flex; justify-content: space-between;">
+    <div style="flex-basis: 30%;">
+      <br>
+      <br>
+      <br>
+      <h3 style="color: white; font-size: 14px;">Politics</h3>
+      <h3 style="color: white; font-size: 14px;">Psychology</h3>
+      <h3 style="color: white; font-size: 14px;">Technology</h3>
+      <h3 style="color: white; font-size: 14px;">Enginnering</h3>
+      <h3 style="color: white; font-size: 14px;">Theology</h3>
+    </div>
+  
+    <br>
+    <br>
+    <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+      <i class="fab fa-instagram" style="color: white; font-size: 14px;"></i>
+      <i class="fab fa-twitter" style="color: white; font-size: 14px;"></i>
+      <i class="fab fa-linkedin" style="color: white; font-size: 14px;"></i>
+      <i class="fab fa-facebook" style="color: white; font-size: 14px;"></i>
+    </div>
+  
+</footer>
+
+
+
+<script>
+const sliders = document.querySelectorAll('.slider');
+
+sliders.forEach((slider, sliderIndex) => {
+  const slides = slider.querySelectorAll('.slide');
+  const prevBtn = slider.querySelector('.prev');
+  const nextBtn = slider.querySelector('.next');
+
+  let index = 0;
+
+  const showSlide = (slideIndex) => {
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = 'none';
+    }
+    slides[slideIndex].style.display = 'inline-block';
+  };
+
+  showSlide(index);
+
+  prevBtn.addEventListener('click', () => {
+    index--;
+    if (index < 0) {
+<!-- IMAGE SLIDER END -->
+
+ 
+
+
+
+
+</body>
+</html>
