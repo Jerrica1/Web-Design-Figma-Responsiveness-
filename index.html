@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Add viewport meta tag for responsive design -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <!-- Add Bootstrap CSS file -->
@@ -13,6 +11,25 @@
 </head>
 <body>
     
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-8 col-md-offset-2">
+      <!-- Your content here -->
+
+
+<body>
+    
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <!-- your content goes here -->
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
 <div>
 
 <!-- NAVBAR SECTION -->
@@ -170,8 +187,8 @@
 
    <!-- Third slider -->
 <div class="container-h2">
-  <h2>Thillers</h2>
-</div> 
+  <h2>Thrillers</h2>
+</div>
 <div class="slider">
   <button class="arrow prev">&#10094;</button>
   <div class="slides">
@@ -198,14 +215,6 @@
   </div>
   <button class="arrow next">&#10095;</button>
 </div>
-<style>
-.slide {
-  display: inline-block;
-  text-align: center;
-}
-</style>
-<br>
-
 
 <style>
   .container-h2 {
@@ -215,61 +224,132 @@
   .slider {
     display: flex;
     justify-content: center;
+    align-items: center;
+    position: relative;
   }
 
   .slide {
     display: inline-block;
     margin-right: 20px;
   }
+
+  .slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .slide:first-of-type {
+    margin-left: 0;
+  }
+
+  .slide:last-of-type {
+    margin-right: 0;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .arrow:hover {
+    transform: scale(1.1);
+  }
+
+  .prev {
+    left: 1rem;
+  }
+
+  .next {
+    right: 1rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    .slide {
+      flex: 0 0 20%;
+    }
+  }
 </style>
 
+<script>
+  const slider = document.querySelector('.slider');
+  const slides = slider.querySelector('.slides');
+  const slide = slider.querySelectorAll('.slide');
+  const prevBtn = slider.querySelector('.prev');
+  const nextBtn = slider.querySelector('.next');
+  let currentSlide = 0;
+  const slideWidth = slide[0].getBoundingClientRect().width;
+
+  function setPosition() {
+    slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+  }
+
+  prev
 
 
 
-<! Four slider -->
-<div class="container-h2" style="padding: 20px; text-align: center;">
-  <h2>Kids</h2>
-</div>
+  <body>
 
-<div class="slider" style="padding: 20px;">
-  <button class="arrow prev" style="float: left;">&#10094;</button>
-  <div class="slides" style="display: inline-block;">
-    <div class="slide" style="display: inline-block; padding: 10px; text-align: center;">
-      <img src="images/Rectangle 11.png" alt="Slide 1" style="display: block; margin: 0 auto;">
-      <br>
-      <button class="borrow-btn" style="background-color: blue;">Borrow</button>
+    <!-- Four slider -->
+    <div class="container-h2" style="padding: 20px; text-align: center; width: 80%; margin: 0 auto;">
+      <h2>Kids</h2>
     </div>
-    <div class="slide" style="display: inline-block; padding: 10px; text-align: center;">
-      <img src="images/Rectangle 12.png" alt="Slide 2" style="display: block; margin: 0 auto;">
-      <br>
-      <button class="borrow-btn" style="background-color: blue;">Borrow</button>
+  
+    <div class="slider" style="padding: 20px;">
+      <button class="arrow prev" style="float: left;">&#10094;</button>
+      <div class="slides" style="display: inline-block;">
+        <div class="slide" style="display: inline-block; padding: 10px; text-align: center;">
+          <img src="images/Rectangle 11.png" alt="Slide 1" style="display: block; margin: 0 auto;">
+          <br>
+          <button class="borrow-btn" style="background-color: blue;">Borrow</button>
+        </div>
+        <div class="slide" style="display: inline-block; padding: 10px; text-align: center;">
+          <img src="images/Rectangle 12.png" alt="Slide 2" style="display: block; margin: 0 auto;">
+          <br>
+          <button class="borrow-btn" style="background-color: blue;">Borrow</button>
+        </div>
+        <div class="slide" style="display: inline-block; padding: 10px; text-align: center;">
+          <img src="images/Rectangle 9.png" alt="Slide 3" style="display: block; margin: 0 auto;">
+          <br>
+          <button class="borrow-btn" style="background-color: blue;">Borrow</button>
+        </div>
+        <div class="slide" style="display: inline-block; padding: 10px; text-align: center;">
+          <img src="images/ABC.png" alt="Slide 4" style="display: block; margin: 0 auto;">
+          <br>
+          <button class="borrow-btn" style="background-color: blue;">Borrow</button>
+        </div>
+      </div>
+      <button class="arrow next" style="float: right;">&#10095;</button>
     </div>
-    <div class="slide" style="display: inline-block; padding: 10px; text-align: center;">
-      <img src="images/Rectangle 9.png" alt="Slide 3" style="display: block; margin: 0 auto;">
-      <br>
-      <button class="borrow-btn" style="background-color: blue;">Borrow</button>
+  
+  
+    <!-- TEXT & IMAGES START -->
+    <h2 style="text-align: center;">Read your textbooks &amp; find supporting sources</h2>
+    <div style="display: flex; justify-content: center; align-items: center; padding: 20px;">
+      <img src="images/physiological.png" alt="Image 1" style="width: 10%; padding: 10px;">
+      <img src="images/Language.png" alt="Image 2" style="width: 10%; padding: 10px;">
+      <img src="images/mathematics.png" alt="Image 3" style="width: 10%; padding: 10px;">
+      <img src="images/Learning science.png" alt="Image 4" style="width: 10%; padding: 10px;">
     </div>
-    <div class="slide" style="display: inline-block; padding: 10px; text-align: center;">
-      <img src="images/ABC.png" alt="Slide 4" style="display: block; margin: 0 auto;">
-      <br>
-      <button class="borrow-btn" style="background-color: blue;">Borrow</button>
-    </div>
-  </div>
-  <button class="arrow next" style="float: right;">&#10095;</button>
-</div>
-
-
-<!-- TEXT & IMAGES START -->
-<h2 style="text-align: center;">Read your textbooks & find supporting sources</h2>
-<div style="display: flex; justify-content: center; align-items: center; padding: 20px;">
-  <img src="images/physiological.png" alt="Image 1" style="width: 10%; padding: 10px;">
-  <img src="images/Language.png" alt="Image 2" style="width: 10%; padding: 10px;">
-  <img src="images/mathematics.png" alt="Image 3" style="width: 10%; padding: 10px;">
-  <img src="images/Learning science.png" alt="Image 4" style="width: 10%; padding: 10px;">
-</div>
-
-
-<!-- TEXT AND IMAGES END -->
+    <!-- TEXT AND IMAGES END -->
+    
+  
+  </body>
+  
+  </html>
 
 <br>
 <br>
@@ -598,8 +678,6 @@ sliders.forEach((slider, sliderIndex) => {
 <!-- IMAGE SLIDER END -->
 
  
-
-
 
 
 </body>
